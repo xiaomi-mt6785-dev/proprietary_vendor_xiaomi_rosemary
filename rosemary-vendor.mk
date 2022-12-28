@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/lib/libmtk_vt_service.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtk_vt_service.so \
     vendor/xiaomi/rosemary/proprietary/lib/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtk_vt_wrapper.so \
     vendor/xiaomi/rosemary/proprietary/lib/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkavenhancements.so \
-    vendor/xiaomi/rosemary/proprietary/lib/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkperf_client.so \
     vendor/xiaomi/rosemary/proprietary/lib/libshowlogo.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libshowlogo.so \
     vendor/xiaomi/rosemary/proprietary/lib/libsignal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsignal.so \
     vendor/xiaomi/rosemary/proprietary/lib/libsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsink.so \
@@ -30,7 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/lib/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvt_avsync.so \
     vendor/xiaomi/rosemary/proprietary/lib64/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk_vt_wrapper.so \
     vendor/xiaomi/rosemary/proprietary/lib64/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkavenhancements.so \
-    vendor/xiaomi/rosemary/proprietary/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkperf_client.so \
     vendor/xiaomi/rosemary/proprietary/lib64/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_cap.so \
     vendor/xiaomi/rosemary/proprietary/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_capenc.so \
     vendor/xiaomi/rosemary/proprietary/system_ext/lib/vendor.mediatek.hardware.mtkradioex@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.mtkradioex@1.0.so \
@@ -1494,7 +1492,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libmtkhardware_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkhardware_legacy.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtklimiter_vendor.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libmtknetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtknetutils.so \
-    vendor/xiaomi/rosemary/proprietary/vendor/lib/libmtkperf_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkperf_client_vendor.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libmtkproperty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkproperty.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkrillog.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib/libmtkshifter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkshifter_vendor.so \
@@ -2408,7 +2405,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libmtkisp_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkisp_metadata.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtklimiter_vendor.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libmtknetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtknetutils.so \
-    vendor/xiaomi/rosemary/proprietary/vendor/lib64/libmtkperf_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkperf_client_vendor.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libmtkproperty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkproperty.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrillog.so \
     vendor/xiaomi/rosemary/proprietary/vendor/lib64/libmtkrilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrilutils.so \
