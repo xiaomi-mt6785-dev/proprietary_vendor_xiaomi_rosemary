@@ -2577,6 +2577,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/xbin/dc_cal:$(TARGET_COPY_OUT_VENDOR)/xbin/dc_cal
 
 PRODUCT_PACKAGES += \
+    libfmjni \
     libwifi-hal-mtk \
     ImsService \
     mediatek-common \
