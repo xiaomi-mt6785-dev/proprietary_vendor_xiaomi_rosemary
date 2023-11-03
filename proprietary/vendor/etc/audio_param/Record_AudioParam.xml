@@ -54,8 +54,8 @@
     <Param path="Unprocessed,USB" param_id="10"/>
     <Param path="Default,VR,Handset" param_id="14"/>
     <Param path="Default,VR,4-pole HS" param_id="15"/>
-    <Param path="Default,SndRecNormal,USB" param_id="16"/>
-    <Param path="Default,CamRecNormal,USB" param_id="17"/>
+    <Param path="Default,CamRecNormal,USB" param_id="16"/>
+    <Param path="Default,SndRecNormal,USB" param_id="17"/>
   </ParamTree>
   <ParamUnitPool>
     <ParamUnit param_id="0">

@@ -4,8 +4,11 @@ service neuralnetworks_hal_service_mtk_neuron /vendor/bin/hw/android.hardware.ne
     group system readproc
     disabled
 
-on property:ro.vendor.mtk_nn_support=1
+on property:ro.vendor.mtk_nn_baseline_support=1
     start neuralnetworks_hal_service_mtk_neuron
 
 on post-fs-data
-    mkdir /data/vendor/h2o 660 system system
+    mkdir /data/vendor/hmp 0775 system system
+
+on post-fs-data
+    mkdir /data/vendor/nn 0775 system system

@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ParamUnitDesc version="1.1">
 	<CategoryTypeList>
-		<CategoryType name="Scene" feature_option="VIR_SCENE_CUSTOMIZATION_SUPPORT">
-			<Category name="Default"/>
-			<Category name="App1"/>
-			<Category name="App2"/>
-		</CategoryType>
 		<CategoryType name="Profile">
-			<Category name="Handset" alias="Normal,HAC"/>
-			<Category name="MagiConference" wording="2-mic NR"/>
+			<Category name="MagiConference" alias="Normal,HAC,Handset,Handsfree"/>
 		</CategoryType>
 	</CategoryTypeList>
 	<ParamUnit>

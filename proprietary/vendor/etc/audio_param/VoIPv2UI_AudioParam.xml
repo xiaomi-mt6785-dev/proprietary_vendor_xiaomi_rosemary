@@ -36,6 +36,8 @@
       <Param name="UL IIR visibility" value="1"/>
       <Param name="UL MIC IIR visibility" value="1"/>
       <Param name="DV visibility" value="0"/>
+      <Param name="UL Gain Set" value="1"/>
+      <Param name="UL Gain Name" value="mic1,mic2,mic3,mic4"/>
     </ParamUnit>
     <ParamUnit param_id="1">
       <Param name="DL FIR visibility" value="1"/>
@@ -59,6 +61,8 @@
       <Param name="UL IIR visibility" value="1"/>
       <Param name="UL MIC IIR visibility" value="1"/>
       <Param name="DV visibility" value="0"/>
+      <Param name="UL Gain Set" value="1"/>
+      <Param name="UL Gain Name" value="mic1,mic2,mic3,mic4"/>
     </ParamUnit>
     <ParamUnit param_id="2">
       <Param name="DL FIR visibility" value="1"/>
@@ -78,6 +82,8 @@
       <Param name="UL AES LB visibility" value="1"/>
       <Param name="UL DMNR mode_param visibility" value="0"/>
       <Param name="UL DMNR common_param visibility" value="0"/>
+      <Param name="UL Gain Set" value="1"/>
+      <Param name="UL Gain Name" value="mic1,mic2,mic3,mic4"/>
     </ParamUnit>
   </ParamUnitPool>
 </AudioParam>

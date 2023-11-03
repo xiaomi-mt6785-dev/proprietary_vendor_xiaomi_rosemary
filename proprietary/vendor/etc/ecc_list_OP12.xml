@@ -26,7 +26,5 @@
                 Ex: 460 FFF means all operators in China
     -->
 
-    <EccEntry Ecc="*911" Category="0" Condition="1" />
-    <EccEntry Ecc="#911" Category="0" Condition="1" />
     <EccEntry Ecc="*272911" Category="0" Condition="1" />
 </EccTable>

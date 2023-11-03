@@ -5,6 +5,7 @@
 			<Category name="Default"/>
 			<Category name="App1"/>
 			<Category name="App2"/>
+			<Category name="HDR_RECORD" feature_option="AUDIO_PMIC_4ADC_SUPPORT"/>
 		</CategoryType>
 		<CategoryType name="Application">
 			<CategoryGroup name="Sound recording">
@@ -25,6 +26,7 @@
 			<Category name="FastRecord" visible="false"/>
 			<Category name="Unprocessed"/>
 			<Category name="IncallRecord"/>
+			<Category name="KTV" wording="In Ear Monitor"/>
 		</CategoryType>
 		<CategoryType name="Profile" wording="Device">
 			<Category name="Handset"/>

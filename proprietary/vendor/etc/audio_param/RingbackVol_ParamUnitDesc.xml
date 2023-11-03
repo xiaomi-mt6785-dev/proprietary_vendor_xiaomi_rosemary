@@ -9,6 +9,10 @@
 			<Category name="HS5POLE" wording="Headset(5-pole)" alias="HS5POLE_ANC,5_pole_Headset,5-pole headset,5_pole_Headset+ANC,TP5PI_PATH"/>
 			<Category name="USB" alias="Usb_Headset"/>
 			<Category name="HEARING_AID" alias="Hearing_Aid"/>
+			<Category name="HSSPK"/>
+			<Category name="BT_A2DP"/>
+			<Category name="BT_A2DP_HP"/>
+			<Category name="BT_A2DP_SPK"/>
 		</CategoryType>
 	</CategoryTypeList>
 	<ParamUnit>

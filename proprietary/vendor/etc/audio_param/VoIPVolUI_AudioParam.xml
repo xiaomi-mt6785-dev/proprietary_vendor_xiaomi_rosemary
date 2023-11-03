@@ -23,7 +23,7 @@
     </ParamUnit>
     <ParamUnit param_id="2">
       <Param name="dl_gain_visibility" value="1"/>
-      <Param name="ul_gain_visibility" value="-1"/>
+      <Param name="ul_gain_visibility" value="1"/>
     </ParamUnit>
   </ParamUnitPool>
 </AudioParam>

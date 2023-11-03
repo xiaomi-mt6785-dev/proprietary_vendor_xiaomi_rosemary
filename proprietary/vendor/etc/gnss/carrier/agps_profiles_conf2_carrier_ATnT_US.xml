@@ -5,9 +5,10 @@
        auto_profile_enable is not supported.
   -->
 
-  <!-- default H-SLP by IMSI: e.g, h-slp.mnc310.mcc170.pub.3gppnetwork.org -->
+  <!-- OK to use Google SUPL Server on Internet by ATnT's 2021 LBS spec.
+       They plan to shutdown ATnT SUPL server in 2023 -->
   <cur_supl_profile name="ATnT_US"
-      addr=""
+      addr="supl.google.com"
       port="7275"
       tls="true"
   />
@@ -27,9 +28,6 @@
 
   <up_setting
     ca_enable="true"
-    preferred_2g3g_cell_age="0"
-    up_lpp_in_2g3g_disable="true"
-    up_rrlp_in_4g_disable="true"
   />
 
 </mtk_agps_profiles>

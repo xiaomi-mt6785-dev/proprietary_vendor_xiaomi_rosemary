@@ -40,7 +40,7 @@
 	</CategoryTypeList>
 	<ParamUnit>
 		<Param name="dl_gain" type="short_array"/><!-- index, corresponding dB in another xml -->
-		<Param name="ul_gain" type="int"/><!-- unit is dB, range in other xml -->
+		<Param name="ul_gain" type="byte_array"/><!-- unit is dB, range in other xml -->
 		<Param name="stf_gain" type="short_array">
 			<Field name="stf_gain_field" array_index="0" bit="0,15" check_list="30,20dB,28,18dB,26,16dB,24,14dB,22,12dB,20,10dB,18,8dB,16,6dB,14,4dB,12,2dB,10,0dB,8,-2dB,6,-4dB,4,-6dB,2,-8dB,0,-10dB"/>
 		</Param>

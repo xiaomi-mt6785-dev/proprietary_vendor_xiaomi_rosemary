@@ -5,6 +5,7 @@
 			<Category name="Default"/>
 			<Category name="App1"/>
 			<Category name="App2"/>
+			<Category name="HDR_RECORD" feature_option="AUDIO_PMIC_4ADC_SUPPORT"/>
 		</CategoryType>
 		<CategoryType name="Application">
 			<CategoryGroup name="Sound recording">
@@ -21,6 +22,7 @@
 			<Category name="VoicePerformance" wording="Voice performance recording" />
 			<Category name="VoiceUnLk" visible="false" />
 			<Category name="Customization2" visible="false" />
+			<Category name="KTV" wording="In Ear Monitor"/>
 		</CategoryType>
 		<CategoryType name="Profile" wording="Device">
 			<Category name="Handset"/>
@@ -45,5 +47,7 @@
 		<Param name="UL ES LB visibility" type="int"/>
 		<Param name="UL AES LB visibility" type="int"/>
 		<Param name="UL Sample Rate" type="int"/>
+		<Param name="UL Gain Set" type="int"/>
+		<Param name="UL Gain Name" type="string_array"/>
 	</ParamUnit>
 </ParamUnitDesc>

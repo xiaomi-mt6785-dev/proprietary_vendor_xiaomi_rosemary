@@ -39,12 +39,12 @@
 				<Category name="Usb_Headset" wording="USB Headset" feature_option="VIR_MTK_USB_PHONECALL"/>
 			</CategoryGroup>
 			<CategoryGroup name="Loopback">
-				<Category name="Lpbk_Handset" wording="Handset"/>
-				<Category name="Lpbk_Headset" wording="Headset"/>
-				<Category name="Lpbk_Handsfree" wording="Handsfree"/>
-				<Category name="Lpbk_Nodelay_Headset_Mic1" wording="Nodelay_Headset_Mic1" feature_option="SPH_PARAM_LPBK_NODELAY"/>
-				<Category name="Lpbk_Nodelay_Headset_Mic2" wording="Nodelay_Headset_Mic2" feature_option="SPH_PARAM_LPBK_NODELAY"/>
-				<Category name="Lpbk_Nodelay_Headset_Mic3" wording="Nodelay_Headset_Mic3" feature_option="SPH_PARAM_LPBK_NODELAY"/>
+				<Category name="Lpbk_Handset" wording="Handset(Loopback)"/>
+				<Category name="Lpbk_Headset" wording="Headset(Loopback)"/>
+				<Category name="Lpbk_Handsfree" wording="Handsfree(Loopback)"/>
+				<Category name="Lpbk_Nodelay_Headset_Mic1" wording="Nodelay_Headset_Mic1(Loopback)" feature_option="SPH_PARAM_LPBK_NODELAY"/>
+				<Category name="Lpbk_Nodelay_Headset_Mic2" wording="Nodelay_Headset_Mic2(Loopback)" feature_option="SPH_PARAM_LPBK_NODELAY"/>
+				<Category name="Lpbk_Nodelay_Headset_Mic3" wording="Nodelay_Headset_Mic3(Loopback)" feature_option="SPH_PARAM_LPBK_NODELAY"/>
 			</CategoryGroup>
 			<CategoryGroup name="Super Volume" feature_option="SPH_PARAM_SV">
 				<Category name="Handset_SV"/>

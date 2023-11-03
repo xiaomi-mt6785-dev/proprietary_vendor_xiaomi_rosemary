@@ -49,7 +49,7 @@ on property:vendor.volte_md_status=exception
     stop volte_imsm_93
 
 service volte_imsm_93 /vendor/bin/volte_imsm_93
-    class core
+    class main
     user system
     group radio cache inet misc log system wifi net_raw
     capabilities NET_RAW NET_ADMIN
