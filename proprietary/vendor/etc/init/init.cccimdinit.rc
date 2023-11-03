@@ -14,12 +14,26 @@ on post-fs-data
 #   chown radio radio /sys/class/BOOT/BOOT/boot/md
     chown radio radio /sys/kernel/ccci/boot
 
+#from ccci_fsd
+    mkdir /data/vendor/mdlpm 0770 system radio
+    restorecon /data/vendor/mdlpm
+#    mkdir /data/vendor/md3 0770 system radio
+    restorecon /data/vendor/md3
+
+    mkdir /data/vendor_de/md 0770 system radio
+    restorecon /data/vendor_de/md
+
+    restorecon_recursive /mnt/vendor/protect_f
+    restorecon_recursive /mnt/vendor/protect_s
+
 #SeLinux
 
 service ccci_mdinit /vendor/bin/ccci_mdinit 0
     user system
     group radio system
     class core
+    priority -20
+    ioprio rt 4
     oneshot
 
 service ccci3_mdinit /vendor/bin/ccci_mdinit 2

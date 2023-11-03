@@ -57,16 +57,17 @@
     <Param path="AAudio,HS5POLE" param_id="0"/>
     <Param path="AAudio,HS5POLE_ANC" param_id="0"/>
     <Param path="Default,Sound recording,Headset" param_id="5"/>
-    <Param path="Default,Sound recording,Handset" param_id="6"/>
-    <Param path="Default,Camera recording,Handset" param_id="7"/>
-    <Param path="Default,VR,Handset" param_id="8"/>
-    <Param path="Default,Camera recording,Headset" param_id="9"/>
-    <Param path="Default,VR,Headset" param_id="10"/>
-    <Param path="Default,VoicePerformance,Headset" param_id="11"/>
-    <Param path="Default,VoicePerformance,Handset" param_id="12"/>
-    <Param path="Default,VoicePerformance,USB" param_id="13"/>
-    <Param path="Default,Sound recording,USB" param_id="14"/>
-    <Param path="Default,Camera recording,USB" param_id="15"/>
+    <Param path="Default,Camera recording,Headset" param_id="6"/>
+    <Param path="Default,VR,Headset" param_id="7"/>
+    <Param path="Default,VoicePerformance,Headset" param_id="8"/>
+    <Param path="Default,VoicePerformance,Handset" param_id="9"/>
+    <Param path="Default,VR,Handset" param_id="10"/>
+    <Param path="Default,Camera recording,Handset" param_id="11"/>
+    <Param path="Default,Sound recording,Handset" param_id="12"/>
+    <Param path="Default,Sound recording,USB" param_id="13"/>
+    <Param path="Default,Camera recording,USB" param_id="14"/>
+    <Param path="Default,VR,USB" param_id="15"/>
+    <Param path="Default,VoicePerformance,USB" param_id="16"/>
   </ParamTree>
   <ParamUnitPool>
     <ParamUnit param_id="0">
@@ -88,33 +89,36 @@
       <Param name="ul_gain" value="23"/>
     </ParamUnit>
     <ParamUnit param_id="6">
-      <Param name="ul_gain" value="27"/>
+      <Param name="ul_gain" value="23"/>
     </ParamUnit>
     <ParamUnit param_id="7">
-      <Param name="ul_gain" value="27"/>
+      <Param name="ul_gain" value="23"/>
     </ParamUnit>
     <ParamUnit param_id="8">
-      <Param name="ul_gain" value="27"/>
+      <Param name="ul_gain" value="23"/>
     </ParamUnit>
     <ParamUnit param_id="9">
-      <Param name="ul_gain" value="23"/>
+      <Param name="ul_gain" value="27"/>
     </ParamUnit>
     <ParamUnit param_id="10">
-      <Param name="ul_gain" value="23"/>
+      <Param name="ul_gain" value="27"/>
     </ParamUnit>
     <ParamUnit param_id="11">
-      <Param name="ul_gain" value="23"/>
+      <Param name="ul_gain" value="27"/>
     </ParamUnit>
     <ParamUnit param_id="12">
       <Param name="ul_gain" value="27"/>
     </ParamUnit>
     <ParamUnit param_id="13">
-      <Param name="ul_gain" value="23"/>
+      <Param name="ul_gain" value="28"/>
     </ParamUnit>
     <ParamUnit param_id="14">
       <Param name="ul_gain" value="28"/>
     </ParamUnit>
     <ParamUnit param_id="15">
+      <Param name="ul_gain" value="28"/>
+    </ParamUnit>
+    <ParamUnit param_id="16">
       <Param name="ul_gain" value="28"/>
     </ParamUnit>
   </ParamUnitPool>

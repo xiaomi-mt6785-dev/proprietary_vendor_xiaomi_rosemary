@@ -1,7 +1,7 @@
 #copy from device/mediatek/common/init.volte.rc
 
 service vendor.volte_imcb /vendor/bin/volte_imcb
-    class core
+    class main
     socket volte_imsa1 stream 660 system radio
     socket volte_imsa2 stream 660 system radio
 #    socket volte_imsvt1 stream 660 root radio

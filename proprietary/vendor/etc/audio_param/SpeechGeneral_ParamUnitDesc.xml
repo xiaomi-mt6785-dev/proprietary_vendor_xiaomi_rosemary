@@ -2,7 +2,9 @@
 <ParamUnitDesc version="1.0">
 	<CategoryTypeList>
 		<CategoryType name="CategoryLayer" wording="CategoryLayer">
-			<Category name="" wording="Common" alias="Common"/>
+			<Category name="Common"/>
+			<Category name="EPL_On"/>
+			<Category name="EPL_Off"/>	
 		</CategoryType>
 	</CategoryTypeList>
 	<ParamUnit>

@@ -17,6 +17,12 @@ service vendor.ril-daemon-mtk /vendor/bin/hw/mtkfusionrild -l libmtk-ril.so
 on property:vendor.ril.mtk=1
     start vendor.ril-daemon-mtk
 
+on property:vendor.ril.mtk.restart=1
+    restart vendor.ril-daemon-mtk
+
+on property:ro.vendor.mtk_mipc_support=1
+    start vendor.ril-daemon-mtk
+
 on property:vold.decrypt=trigger_restart_framework
     start vendor.ril-daemon-mtk
 

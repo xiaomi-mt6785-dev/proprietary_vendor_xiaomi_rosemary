@@ -2,7 +2,7 @@
 #copy from device/mediatek/common/init.volte.rc
 
 service vendor.volte_stack /vendor/bin/volte_stack
-    class core
+    class main
     socket volte_stack stream 660 system system
     user system
     group system log inet radio

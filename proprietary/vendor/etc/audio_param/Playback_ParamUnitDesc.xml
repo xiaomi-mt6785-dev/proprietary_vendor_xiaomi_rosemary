@@ -27,7 +27,7 @@
 			<Category name="Speaker"/>
 			<Category name="Headset+Speaker"/>
 			<Category name="USB"/>
-			<Category name="HEARING_AID" feature_option="MTK_BT_HEARING_AID_SUPPORT"/>
+			<Category name="HEARING_AID" feature_option="MTK_BT_HEARING_AID_SUPPORT" visible="false"/>
 			<CategoryGroup name="BT A2DP">
 				<Category name="BT A2DP"/>
 				<Category name="BT A2DP HP"/>

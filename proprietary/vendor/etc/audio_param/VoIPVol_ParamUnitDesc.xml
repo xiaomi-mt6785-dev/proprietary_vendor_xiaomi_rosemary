@@ -17,10 +17,13 @@
 			<Category name="HS5POLE_ANC" wording="Headset(5-pole+ANC)" alias="5-pole headset+ANC,5_pole_Headset+ANC"/>
 			<Category name="USB" alias="Usb_Headset"/>
 			<Category name="HEARING_AID" alias="HEARING_AID"/>
+			<Category name="BT_A2DP"/>
+			<Category name="BT_A2DP_HP"/>
+			<Category name="BT_A2DP_SPK"/>
 		</CategoryType>
 	</CategoryTypeList>
 	<ParamUnit>
 		<Param name="dl_gain" type="short_array"/><!-- unit is dB, range in other xml -->
-		<Param name="ul_gain" type="int"/><!-- unit is dB, range in other xml -->
+		<Param name="ul_gain" type="byte_array"/><!-- unit is dB, range in other xml -->
 	</ParamUnit>
 </ParamUnitDesc>
