@@ -104,12 +104,6 @@ dex_import {
 }
 
 dex_import {
-	name: "mediatek-ims-legacy",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/mediatek-ims-legacy.jar"],
-}
-
-dex_import {
 	name: "mediatek-telecom-common",
 	owner: "xiaomi",
 	jars: ["proprietary/framework/mediatek-telecom-common.jar"],
