@@ -2574,4 +2574,4 @@ PRODUCT_PACKAGES += \
     lbs_hidl_service@1.0 \
     manifest_android.hardware.drm@1.4-service.widevine \
     manifest_hwcomposer \
-    manifest_media_c2_V1_2_default
+    manifest_media_c2_V1_1_default
