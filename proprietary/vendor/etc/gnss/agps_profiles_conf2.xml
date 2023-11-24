@@ -949,7 +949,7 @@
 
   -->
   <up_setting
-    ca_enable="false"
+    ca_enable="true"
     ni_request="true"
     roaming="true"
     cdma_preferred="0"

@@ -313,6 +313,12 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
                 <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
                 <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+                <data cmd="PERF_RES_FPS_GBE1_ENABLE" param1="1"></data>
+                <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="1"></data>
+                <data cmd="PERF_RES_FPS_GBE2_TIMER2_MS" param1="3000"></data>
+                <data cmd="PERF_RES_FPS_GBE2_MAX_BOOST_CNT" param1="2"></data>
+                <data cmd="PERF_RES_FPS_GBE2_LOADING_TH" param1="0"></data>
+                <data cmd="PERF_RES_FPS_GBE_POLICY_MASK" param1="31"></data>
             </FPS>
         </Activity>
     </Package>
@@ -856,8 +862,10 @@ any software that is unrelated to enhancing end-user experience. -->
      </Package>
      <Package name="com.google.android.youtube">
          <Activity name="Common">
-             <data cmd="PERF_RES_POWERHAL_WHITELIST_APP_LAUNCH_TIME_COLD" param1="25000"></data>
-                <data cmd="PERF_RES_POWERHAL_WHITELIST_APP_LAUNCH_TIME_WARM" param1="5000"></data>
+             <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="70"></data>
+             <data cmd="PERF_RES_SCHED_PREFER_IDLE_FG" param1="1"></data>
+             <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT" param1="100"></data>
+             <data cmd="PERF_RES_FPS_FBT_MIN_RESCUE_PERCENT" param1="100"></data>
          </Activity>
      </Package>
      <Package name="com.instagram.android">
@@ -1082,6 +1090,19 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
                 <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="50"></data>
             </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.mi.android.globalFileexplorer">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_IO_BLKDEV_READAHEAD" param1="512"></data>
+                <data cmd="PERF_RES_DRAM_CM_MGR" param1="1"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+                <data cmd="PERF_RES_FPS_FBT_BOOST_TA" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_BOOST_VALUE_TA" param1="30"></data>
+                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+           </FPS>
         </Activity>
     </Package>
 </WHITELIST>
