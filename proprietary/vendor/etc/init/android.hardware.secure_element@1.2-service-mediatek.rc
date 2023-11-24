@@ -3,5 +3,9 @@ service mtk_secure_element_hal_service /vendor/bin/hw/android.hardware.secure_el
     user secure_element
     group secure_element
     disabled
+    
+on boot && property:ro.boot.product.vendor.sku=rosemaryp
+    start mtk_secure_element_hal_service
+        
 on boot && property:ro.boot.product.vendor.sku=rosemary
     start mtk_secure_element_hal_service
