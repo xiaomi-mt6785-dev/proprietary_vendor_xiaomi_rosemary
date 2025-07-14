@@ -613,6 +613,7 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libladder \
+    libmsbc_mtk \
     libmtcloader \
     libmtkcutils \
     libmtklimiter_vendor \
@@ -1357,7 +1358,6 @@ PRODUCT_PACKAGES += \
     libmnl \
     libmp3dec_mtk \
     libmpbase \
-    libmsbc_mtk \
     libmsnr \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
