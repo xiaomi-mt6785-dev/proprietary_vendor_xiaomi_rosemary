@@ -11,329 +11,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio@6.0-impl-mediatek",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so",
-            ],
-            shared_libs: [
-                "libaudiofoundation",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libutils",
-                "android.hardware.audio@6.0",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util",
-                "vendor.mediatek.hardware.audio@6.1",
-                "libmedia_helper",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so",
-            ],
-            shared_libs: [
-                "libaudiofoundation",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libutils",
-                "android.hardware.audio@6.0",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util",
-                "vendor.mediatek.hardware.audio@6.1",
-                "libmedia_helper",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio@7.0-impl-mediatek",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so",
-            ],
-            shared_libs: [
-                "libaudiofoundation",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libutils",
-                "android.hardware.audio@7.0",
-                "android.hardware.audio@7.0-util",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums",
-                "android.hardware.audio.common@7.0-util",
-                "android.hardware.audio.common-util",
-                "vendor.mediatek.hardware.audio@7.1",
-                "libmedia_helper",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so",
-            ],
-            shared_libs: [
-                "libaudiofoundation",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libutils",
-                "android.hardware.audio@7.0",
-                "android.hardware.audio@7.0-util",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums",
-                "android.hardware.audio.common@7.0-util",
-                "android.hardware.audio.common-util",
-                "vendor.mediatek.hardware.audio@7.1",
-                "libmedia_helper",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth@1.1-impl-mediatek",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth@1.0",
-                "android.hardware.bluetooth@1.1",
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth@1.0",
-                "android.hardware.bluetooth@1.1",
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "audio.primary.mt6785",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio.primary.mt6785.so",
-            ],
-            shared_libs: [
-                "libstagefright_foundation-v33",
-                "libhidlbase",
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libalsautils-v31",
-                "libhardware_legacy",
-                "libhardware",
-                "libaudioutils",
-                "libtinyalsa",
-                "libtinyxml2",
-                "libaudiotoolkit_vendor",
-                "libmedia_helper",
-                "libladder",
-                "android.hardware.audio@7.0",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util",
-                "vendor.mediatek.hardware.audio@7.1",
-                "libtinycompress",
-                "libbwc",
-                "libhidltransport",
-                "libhwbinder",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "libaedv",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.primary.mt6785.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libalsautils",
-                "libhardware_legacy",
-                "libhardware",
-                "libaudioutils",
-                "libtinyalsa",
-                "libtinyxml2",
-                "libaudiotoolkit_vendor",
-                "libmedia_helper",
-                "libladder",
-                "android.hardware.audio@7.0",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util",
-                "vendor.mediatek.hardware.audio@7.1",
-                "libtinycompress",
-                "libbwc",
-                "libhidltransport",
-                "libhwbinder",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "libaedv",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "audio.r_submix.mt6785",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio.r_submix.mt6785.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmedia_helper",
-                "libutils",
-                "libnbaio_mono",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.r_submix.mt6785.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmedia_helper",
-                "libutils",
-                "libnbaio_mono",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "consumerir.mt6785",
     owner: "xiaomi",
     strip: {
@@ -360,186 +37,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "sound_trigger.primary.default",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/sound_trigger.primary.default.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libhardware_legacy",
-                "libhardware",
-                "libmedia_helper",
-                "libhidlbase",
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "libaedv",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/sound_trigger.primary.default.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libhardware_legacy",
-                "libhardware",
-                "libmedia_helper",
-                "libhidlbase",
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "libaedv",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio@2.1-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libbluetooth_audio_session_mediatek",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libhardware",
-                "android.hardware.audio@6.0",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util",
-                "vendor.mediatek.hardware.audio@6.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libbluetooth_audio_session_mediatek",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libhardware",
-                "android.hardware.audio@6.0",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util",
-                "vendor.mediatek.hardware.audio@6.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio@2.2-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "libbase",
-                "libbluetooth_audio_session_mediatek",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libhardware",
-                "android.hardware.audio@6.0",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util",
-                "vendor.mediatek.hardware.audio@6.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "libbase",
-                "libbluetooth_audio_session_mediatek",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libhardware",
-                "android.hardware.audio@6.0",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util",
-                "vendor.mediatek.hardware.audio@6.1",
                 "libc++",
                 "libc",
                 "libm",
@@ -659,125 +156,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libMtkSpeechEnh",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libMtkSpeechEnh.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libMtkSpeechEnh.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "lib_iir",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/lib_iir.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/lib_iir.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "lib_speech_enh",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/lib_speech_enh.so",
-            ],
-            shared_libs: [
-                "libMtkSpeechEnh",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libaudioutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/lib_speech_enh.so",
-            ],
-            shared_libs: [
-                "libMtkSpeechEnh",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libaudioutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaedv",
     owner: "xiaomi",
     strip: {
@@ -816,47 +194,6 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libm",
                 "libc++",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libakm",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libakm.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libakm.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -1120,962 +457,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudio_param_parser-vnd",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudio_param_parser-vnd.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libbinder",
-                "libaudiocustparam_vendor",
-                "libaudioprimarydevicehalifclient",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudio_param_parser-vnd.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libbinder",
-                "libaudiocustparam_vendor",
-                "libaudioprimarydevicehalifclient",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudiocompensationfilter_vendor",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudiocompensationfilter_vendor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudiocompensationfilter_vendor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudiocompensationfilterc",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudiocompensationfilterc.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libaudiocustparam_vendor",
-                "libnvram",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudiocompensationfilterc.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libaudiocustparam_vendor",
-                "libnvram",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudiocomponentengine_vendor",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudiocomponentengine_vendor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libaudiodcrflt_vendor",
-                "libblisrc32_vendor",
-                "libmtklimiter_vendor",
-                "libmtkshifter_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudiocomponentengine_vendor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libaudiodcrflt_vendor",
-                "libblisrc32_vendor",
-                "libmtklimiter_vendor",
-                "libmtkshifter_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudiocomponentenginec",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudiocomponentenginec.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libblisrc32_vendor",
-                "libmtklimiter_vendor",
-                "libmtkshifter_vendor",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudiocomponentenginec.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libblisrc32_vendor",
-                "libmtklimiter_vendor",
-                "libmtkshifter_vendor",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudiocustparam_vendor",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudiocustparam_vendor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudiocustparam_vendor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudiodcrflt_vendor",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudiodcrflt_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmtk_drvb",
-                "libutils",
-                "libm",
-                "libc++",
-                "libc",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudiodcrflt_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmtk_drvb",
-                "libutils",
-                "libm",
-                "libc++",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudiofmtconv",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudiofmtconv.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libblisrc32_vendor",
-                "libmtkshifter_vendor",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudiofmtconv.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libblisrc32_vendor",
-                "libmtkshifter_vendor",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudioloudc",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudioloudc.so",
-            ],
-            shared_libs: [
-                "libaudiocompensationfilterc",
-                "libbessound_hd_mtk_vendor",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudioloudc.so",
-            ],
-            shared_libs: [
-                "libaudiocompensationfilterc",
-                "libbessound_hd_mtk_vendor",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudioprimarydevicehalifclient",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudioprimarydevicehalifclient.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libbase",
-                "libhwbinder",
-                "libhidlbase",
-                "android.hardware.audio@7.0",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util",
-                "libmedia_helper",
-                "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudioprimarydevicehalifclient.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libbase",
-                "libhwbinder",
-                "libhidlbase",
-                "android.hardware.audio@7.0",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util",
-                "libmedia_helper",
-                "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudiotoolkit_vendor",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudiotoolkit_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudiotoolkit_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaurisysdemo",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaurisysdemo.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaurisysdemo.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libawinicsmartpaparse",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libawinicsmartpaparse.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "libc",
-                "libm",
-                "liblog",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libawinicsmartpaparse.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbessound_hd_mtk_vendor",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbessound_hd_mtk_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmtk_drvb",
-                "libutils",
-                "libm",
-                "libc++",
-                "libc",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbessound_hd_mtk_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmtk_drvb",
-                "libutils",
-                "libm",
-                "libc++",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libblisrc32_vendor",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libblisrc32_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmtk_drvb",
-                "libutils",
-                "libm",
-                "libc++",
-                "libc",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libblisrc32_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmtk_drvb",
-                "libutils",
-                "libm",
-                "libc++",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetooth_audio_session_mediatek",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbluetooth_audio_session_mediatek.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetooth_hw_test",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbluetooth_hw_test.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_hw_test.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetooth_mtk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbluetooth_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetooth_mtk_pure",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbluetooth_mtk_pure.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_mtk_pure.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetooth_relayer",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbluetooth_relayer.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbluetoothem_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_relayer.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbluetoothem_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetoothem_mtk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbluetoothem_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetoothem_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbt-vendor",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbt-vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbluetooth_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbt-vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbluetooth_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libbwc",
     owner: "xiaomi",
     strip: {
@@ -2265,49 +646,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcvsd_mtk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcvsd_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmtk_drvb",
-                "libutils",
-                "libm",
-                "libc++",
-                "libc",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcvsd_mtk.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmtk_drvb",
-                "libutils",
-                "libm",
-                "libc++",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdynamiclog",
     owner: "xiaomi",
     strip: {
@@ -2376,39 +714,6 @@ cc_prebuilt_library_shared {
                 "libnvram",
                 "liblog",
                 "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libfvaudio",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libfvaudio.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libfvaudio.so",
-            ],
-            shared_libs: [
                 "libc",
                 "libm",
                 "libdl",
@@ -2494,47 +799,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libhwm",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libhwm.so",
-            ],
-            shared_libs: [
-                "libnvram",
-                "liblog",
-                "libfile_op",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhwm.so",
-            ],
-            shared_libs: [
-                "libnvram",
-                "liblog",
-                "libfile_op",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
     prefer: true,
     soc_specific: true,
 }
@@ -3395,110 +1659,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "librgbwlightsensor",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/librgbwlightsensor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libhardware",
-                "liblog",
-                "libhidlbase",
-                "android.frameworks.sensorservice@1.0",
-                "android.hardware.sensors@1.0",
-                "libsensorndkbridge",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/librgbwlightsensor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libhardware",
-                "liblog",
-                "libhidlbase",
-                "android.frameworks.sensorservice@1.0",
-                "android.hardware.sensors@1.0",
-                "android.hardware.sensors@1.0-convert-shared",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "librt_extamp_intf",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/librt_extamp_intf.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libtinyalsa",
-                "libtinyxml2",
-                "liblog",
-                "libnvram",
-                "libcrypto",
-                "libssl",
-                "libfile_op",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/librt_extamp_intf.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libtinyalsa",
-                "libtinyxml2",
-                "liblog",
-                "libnvram",
-                "libcrypto",
-                "libssl",
-                "libfile_op",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libscltm",
     owner: "xiaomi",
     strip: {
@@ -3523,88 +1683,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libspeech_enh_lib",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libspeech_enh_lib.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libspeech_enh_lib.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libspeechparser_vendor",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libspeechparser_vendor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libaudioutils",
-                "libmedia_helper",
-                "libxml2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libspeechparser_vendor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libaudioutils",
-                "libmedia_helper",
-                "libxml2",
                 "libc++",
                 "libc",
                 "libm",
@@ -4109,108 +2187,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.audio@6.1",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.audio@6.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.effect@6.0",
-                "android.hardware.audio@6.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.audio@6.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.effect@6.0",
-                "android.hardware.audio@6.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.audio@7.1",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.audio@7.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.effect@7.0",
-                "android.hardware.audio@7.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.audio@7.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.effect@7.0",
-                "android.hardware.audio@7.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.bluetooth.audio@2.1",
     owner: "xiaomi",
     strip: {
@@ -4395,6 +2371,122 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "audio.primary.mt6785",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/audio.primary.mt6785.so",
+            ],
+            shared_libs: [
+                "libstagefright_foundation-v33",
+                "libhidlbase",
+                "vendor.mediatek.hardware.mtkpower@1.0",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libalsautils-v31",
+                "libhardware_legacy",
+                "libhardware",
+                "libaudioutils",
+                "libtinyalsa",
+                "libtinyxml2",
+                "libaudiotoolkit_vendor",
+                "libmedia_helper",
+                "libladder",
+                "android.hardware.audio@7.0",
+                "android.hardware.audio.common-util",
+                "android.hardware.audio.common@7.0",
+                "android.hardware.audio.common@7.0-util",
+                "vendor.mediatek.hardware.audio@7.1",
+                "libtinycompress",
+                "libbwc",
+                "libhidltransport",
+                "libhwbinder",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "libaedv",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "audio.r_submix.mt6785",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/audio.r_submix.mt6785.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmedia_helper",
+                "libutils",
+                "libnbaio_mono",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "sound_trigger.primary.default",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/sound_trigger.primary.default.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libhardware_legacy",
+                "libhardware",
+                "libmedia_helper",
+                "libhidlbase",
+                "vendor.mediatek.hardware.mtkpower@1.0",
+                "libaedv",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libHEVCdec_sa.ca7.android",
     owner: "xiaomi",
     strip: {
@@ -4419,6 +2511,85 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "32",
     check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMtkSpeechEnh",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libMtkSpeechEnh.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib_iir",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/lib_iir.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib_speech_enh",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/lib_speech_enh.so",
+            ],
+            shared_libs: [
+                "libMtkSpeechEnh",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libaudioutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
     prefer: true,
     soc_specific: true,
 }
@@ -4452,6 +2623,465 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libaudio_param_parser-vnd",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudio_param_parser-vnd.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libbinder",
+                "libaudiocustparam_vendor",
+                "libaudioprimarydevicehalifclient",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiocompensationfilter_vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudiocompensationfilter_vendor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libnvram",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiocompensationfilterc",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudiocompensationfilterc.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libaudiocustparam_vendor",
+                "libnvram",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiocomponentengine_vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudiocomponentengine_vendor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libaudiodcrflt_vendor",
+                "libblisrc32_vendor",
+                "libmtklimiter_vendor",
+                "libmtkshifter_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiocomponentenginec",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudiocomponentenginec.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libblisrc32_vendor",
+                "libmtklimiter_vendor",
+                "libmtkshifter_vendor",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiocustparam_vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudiocustparam_vendor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libnvram",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiodcrflt_vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudiodcrflt_vendor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtk_drvb",
+                "libutils",
+                "libm",
+                "libc++",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiofmtconv",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudiofmtconv.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libblisrc32_vendor",
+                "libmtkshifter_vendor",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudioloudc",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudioloudc.so",
+            ],
+            shared_libs: [
+                "libaudiocompensationfilterc",
+                "libbessound_hd_mtk_vendor",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudioprimarydevicehalifclient",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudioprimarydevicehalifclient.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbase",
+                "libhwbinder",
+                "libhidlbase",
+                "android.hardware.audio@7.0",
+                "android.hardware.audio.common@7.0",
+                "android.hardware.audio.common@7.0-util",
+                "libmedia_helper",
+                "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiotoolkit_vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudiotoolkit_vendor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaurisysdemo",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaurisysdemo.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libawinicsmartpaparse",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libawinicsmartpaparse.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libc",
+                "libm",
+                "liblog",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbessound_hd_mtk_vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libbessound_hd_mtk_vendor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtk_drvb",
+                "libutils",
+                "libm",
+                "libc++",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libblisrc32_vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libblisrc32_vendor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtk_drvb",
+                "libutils",
+                "libm",
+                "libc++",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcvsd_mtk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcvsd_mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtk_drvb",
+                "libutils",
+                "libm",
+                "libc++",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libfgauge_gm30",
     owner: "xiaomi",
     strip: {
@@ -4468,6 +3098,29 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libmtk_drvb",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libfvaudio",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libfvaudio.so",
+            ],
+            shared_libs: [
                 "libc",
                 "libm",
                 "libdl",
@@ -4695,6 +3348,93 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libhardware",
                 "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librt_extamp_intf",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librt_extamp_intf.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libtinyalsa",
+                "libtinyxml2",
+                "liblog",
+                "libnvram",
+                "libcrypto",
+                "libssl",
+                "libfile_op",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libspeech_enh_lib",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libspeech_enh_lib.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libspeechparser_vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libspeechparser_vendor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libaudioutils",
+                "libmedia_helper",
+                "libxml2",
                 "libc++",
                 "libc",
                 "libm",
@@ -5107,6 +3847,38 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libvt_custom.so",
             ],
             shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.audio@7.1",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.mediatek.hardware.audio@7.1.so",
+            ],
+            shared_libs: [
+                "android.hardware.audio.common@7.0",
+                "android.hardware.audio.effect@7.0",
+                "android.hardware.audio@7.0",
+                "android.hidl.safe_union@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -5846,6 +4618,39 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.bluetooth@1.1-impl-mediatek",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so",
+            ],
+            shared_libs: [
+                "android.hardware.bluetooth@1.0",
+                "android.hardware.bluetooth@1.1",
+                "libbase",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
 }
@@ -19091,6 +17896,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libakm",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libakm.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libalCFR",
     owner: "xiaomi",
     strip: {
@@ -19451,6 +18283,118 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libasn1c_core",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbluetooth_audio_session_mediatek",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "libbase",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbluetooth_mtk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbluetooth_mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libnvram",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbluetooth_mtk_pure",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbluetooth_mtk_pure.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libnvram",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbt-vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbt-vendor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbluetooth_mtk",
                 "libc++",
                 "libc",
                 "libm",
@@ -22515,6 +21459,33 @@ cc_prebuilt_library_shared {
                 "libion",
                 "libion_mtk",
                 "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhwm",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhwm.so",
+            ],
+            shared_libs: [
+                "libnvram",
+                "liblog",
+                "libfile_op",
                 "libc++",
                 "libc",
                 "libm",
@@ -26000,36 +24971,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmtkspparser",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmtkspparser.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libaudioutils",
-                "libspeechparser_vendor",
-                "libmedia_helper",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmtksysutils",
     owner: "xiaomi",
     strip: {
@@ -26518,6 +25459,38 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "liblog",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librgbwlightsensor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/librgbwlightsensor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libhardware",
+                "liblog",
+                "libhidlbase",
+                "android.frameworks.sensorservice@1.0",
+                "android.hardware.sensors@1.0",
+                "android.hardware.sensors@1.0-convert-shared",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -30585,36 +29558,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "audiocmdservice_atci",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/audiocmdservice_atci",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libbinder",
-                "liblog",
-                "libaudiocompensationfilter_vendor",
-                "libaudioprimarydevicehalifclient",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "batterysecret",
     owner: "xiaomi",
     target: {
@@ -32137,33 +31080,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "sensors_test",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/sensors_test",
-            ],
-            shared_libs: [
-                "libutils",
-                "libhwm",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     strip: {
         none: true,
     },

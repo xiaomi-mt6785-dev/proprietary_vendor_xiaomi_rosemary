@@ -156,7 +156,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/camera/sr_params.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr_params.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
-    vendor/xiaomi/rosemary/proprietary/vendor/etc/cit_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cit_config.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/dsi_panel_k7_38_0c_0a_fhdp_video_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_panel_k7_38_0c_0a_fhdp_video_mi.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/dsi_panel_k7_44_06_0b_fhdp_video_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_panel_k7_44_06_0b_fhdp_video_mi.xml \
@@ -197,7 +196,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service-st.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service-st.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
-    vendor/xiaomi/rosemary/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
@@ -551,62 +549,25 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/xbin/dc_cal:$(TARGET_COPY_OUT_VENDOR)/xbin/dc_cal
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio@6.0-impl-mediatek \
-    android.hardware.audio@7.0-impl-mediatek \
-    android.hardware.bluetooth@1.1-impl-mediatek \
-    audio.primary.mt6785 \
-    audio.r_submix.mt6785 \
     consumerir.mt6785 \
-    sound_trigger.primary.default \
-    vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
-    vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     libJpgEncPipe \
-    libMtkSpeechEnh \
-    lib_iir \
-    lib_speech_enh \
     libaedv \
-    libakm \
     libapmonitor_vendor \
     libapu_mdw \
     libapusys \
     libapusys_edma \
     libarmnn \
     libarmnn_ndk.mtk.vndk \
-    libaudio_param_parser-vnd \
-    libaudiocompensationfilter_vendor \
-    libaudiocompensationfilterc \
-    libaudiocomponentengine_vendor \
-    libaudiocomponentenginec \
-    libaudiocustparam_vendor \
-    libaudiodcrflt_vendor \
-    libaudiofmtconv \
-    libaudioloudc \
-    libaudioprimarydevicehalifclient \
-    libaudiotoolkit_vendor \
-    libaurisysdemo \
-    libawinicsmartpaparse \
-    libbessound_hd_mtk_vendor \
-    libblisrc32_vendor \
-    libbluetooth_audio_session_mediatek \
-    libbluetooth_hw_test \
-    libbluetooth_mtk \
-    libbluetooth_mtk_pure \
-    libbluetooth_relayer \
-    libbluetoothem_mtk \
-    libbt-vendor \
     libbwc \
     libcapctrl \
     libcmdl \
     libcmdl_ndk.mtk.vndk \
     libcustom_nvram \
-    libcvsd_mtk \
     libdynamiclog \
     libfile_op \
-    libfvaudio \
     libhdrvideo \
     libhevce_sb.ca7.android \
-    libhwm \
     libion_mtk \
     libion_ulit \
     libipsec_ims_shr \
@@ -628,11 +589,7 @@ PRODUCT_PACKAGES += \
     libnvram \
     libnvram_sec \
     libpowerhalwrap_vendor \
-    librgbwlightsensor \
-    librt_extamp_intf \
     libscltm \
-    libspeech_enh_lib \
-    libspeechparser_vendor \
     libtflite_mtk \
     libthha \
     libvcodec_oal \
@@ -645,15 +602,36 @@ PRODUCT_PACKAGES += \
     nfc_nci.st21nfc.st \
     vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.apuware.utils@2.0 \
-    vendor.mediatek.hardware.audio@6.1 \
-    vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
+    audio.primary.mt6785 \
+    audio.r_submix.mt6785 \
+    sound_trigger.primary.default \
     libHEVCdec_sa.ca7.android \
+    libMtkSpeechEnh \
+    lib_iir \
+    lib_speech_enh \
     libalsautils-v31 \
+    libaudio_param_parser-vnd \
+    libaudiocompensationfilter_vendor \
+    libaudiocompensationfilterc \
+    libaudiocomponentengine_vendor \
+    libaudiocomponentenginec \
+    libaudiocustparam_vendor \
+    libaudiodcrflt_vendor \
+    libaudiofmtconv \
+    libaudioloudc \
+    libaudioprimarydevicehalifclient \
+    libaudiotoolkit_vendor \
+    libaurisysdemo \
+    libawinicsmartpaparse \
+    libbessound_hd_mtk_vendor \
+    libblisrc32_vendor \
+    libcvsd_mtk \
     libfgauge_gm30 \
+    libfvaudio \
     libh264dec_customize \
     libh264dec_sa.ca7 \
     libh264dec_sd.ca7 \
@@ -662,6 +640,9 @@ PRODUCT_PACKAGES += \
     libmp4enc_sa.ca7 \
     libmp4enc_xa.ca7 \
     librcs_interface \
+    librt_extamp_intf \
+    libspeech_enh_lib \
+    libspeechparser_vendor \
     libthermalalgo \
     libvcodec_utility \
     libvcodecdrv \
@@ -677,6 +658,7 @@ PRODUCT_PACKAGES += \
     libvp9dec_sa.ca7 \
     libvpud_vcodec \
     libvt_custom \
+    vendor.mediatek.hardware.audio@7.1 \
     APUWareUtilsServer \
     APUWareXrpServer \
     AVCSecureVdecCA \
@@ -700,6 +682,7 @@ PRODUCT_PACKAGES += \
     gc02m1sunny_mipi_raw_india_IdxMgr \
     gc02m1sunny_mipi_raw_india_tuning \
     gc02m1sunny_mipi_raw_tuning \
+    android.hardware.bluetooth@1.1-impl-mediatek \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
@@ -1226,6 +1209,7 @@ PRODUCT_PACKAGES += \
     libaal_mtk \
     libaalservice \
     libadpcmdec_mtk \
+    libakm \
     libalCFR \
     libalLDC \
     libalacdec_mtk \
@@ -1240,6 +1224,10 @@ PRODUCT_PACKAGES += \
     libasn1c_core \
     libasn1c_mapi \
     libasn1c_mdmi \
+    libbluetooth_audio_session_mediatek \
+    libbluetooth_mtk \
+    libbluetooth_mtk_pure \
+    libbt-vendor \
     libc++_shared \
     libcam.chdr \
     libcam.feature_utils \
@@ -1334,6 +1322,7 @@ PRODUCT_PACKAGES += \
     libgz_gp_client \
     libgz_uree \
     libheichal \
+    libhwm \
     libhydra \
     libicd_decoder \
     libifcutils_mtk \
@@ -1435,7 +1424,6 @@ PRODUCT_PACKAGES += \
     libmtknetcap \
     libmtknetutils \
     libmtkrilutils \
-    libmtkspparser \
     libmtksysutils \
     libmtktinyxml \
     libmtkutils \
@@ -1453,6 +1441,7 @@ PRODUCT_PACKAGES += \
     libratconfig \
     libremosaic_wrapper \
     libremosaiclib \
+    librgbwlightsensor \
     librilfusion \
     librpc \
     libsdk_sr \
@@ -1595,7 +1584,6 @@ PRODUCT_PACKAGES += \
     manifest_hwcomposer.xml \
     manifest_media_c2_V1_1_default.xml \
     SoterProvisioningTool \
-    audiocmdservice_atci \
     batterysecret \
     bip \
     bp_kmsetkey_ca \
@@ -1653,7 +1641,6 @@ PRODUCT_PACKAGES += \
     nvram_daemon \
     rt5512_calibration \
     rttv \
-    sensors_test \
     starter \
     stroke \
     teei_daemon \
