@@ -695,7 +695,7 @@ PRODUCT_PACKAGES += \
     hwcomposer.mt6785 \
     kmsetkey.beanpod \
     libSoftGatekeeper \
-    sensors.elliptic \
+    sensors.elliptic@2.0 \
     sensors.mt6785 \
     vendor.mediatek.hardware.camera.atms@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \

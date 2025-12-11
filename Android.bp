@@ -5107,7 +5107,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "sensors.elliptic",
+    name: "sensors.elliptic@2.0",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -5115,7 +5115,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/hw/sensors.elliptic.so",
+                "proprietary/vendor/lib64/hw/sensors.elliptic@2.0.so",
             ],
             shared_libs: [
                 "android.hardware.sensors@2.0",
