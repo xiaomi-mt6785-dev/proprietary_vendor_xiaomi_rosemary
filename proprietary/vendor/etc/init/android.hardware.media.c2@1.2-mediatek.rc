@@ -5,3 +5,6 @@ service android-hardware-media-c2-hal-1-2 /vendor/bin/hw/android.hardware.media.
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks
 
+    interface android.hardware.media.c2@1.0::IComponentStore default
+    interface android.hardware.media.c2@1.1::IComponentStore default
+    interface android.hardware.media.c2@1.2::IComponentStore default
