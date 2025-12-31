@@ -12,6 +12,8 @@
 			<Category name="smartpa_richtek_rt5512"/>
 			<Category name="smartpa_nxp_tfa9874"/>
 			<Category name="smartpa_cirrus_cs35l41"/>
+			<Category name="smartpa_awinic_aw883xx"/>
+			<Category name="smartpa_cirrus_cs35l45"/>
 		</CategoryType>
 	</CategoryTypeList>
 	<ParamUnit>

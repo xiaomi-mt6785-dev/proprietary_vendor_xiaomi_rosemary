@@ -56,6 +56,7 @@
  <Param name="MTK_VOW_MULTI_KEYPHRASE_SUPPORT" value="" />
  <Param name="MTK_VOW_SINGLE_MIC_SELECT" value="" />
  <Param name="MTK_VOW_RECORD_CONCURRENT" value="" />
+ <Param name="MTK_VOW_NORMAL_RECORD_ENROLL" value="" />
  <Param name="MTK_PHONE_CALL_FIXED_48K_SAMPLERATE" value="yes" />
  <Param name="VIR_WIFI_ONLY_SUPPORT" value="no" />
  <Param name="VIR_3G_DATA_ONLY_SUPPORT" value="no" />

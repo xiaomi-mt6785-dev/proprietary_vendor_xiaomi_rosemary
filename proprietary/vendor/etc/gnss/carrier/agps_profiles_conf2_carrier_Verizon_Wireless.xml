@@ -37,8 +37,10 @@
     supl_version="2"
     ut3="30"
     supl_ver_minor="0"
-    supl_ver_ser_ind="2"
+    supl_ver_ser_ind="4"
     force_otdoa_assist_req="true"
+    tls_version="2"
+    tc10_supl_1_0_disable="true"
   />
 
 </mtk_agps_profiles>

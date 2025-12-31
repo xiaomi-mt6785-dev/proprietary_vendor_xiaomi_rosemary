@@ -17,8 +17,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/FV-SAM-MTK2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/FV-SAM-MTK2.dat \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
-    vendor/xiaomi/rosemary/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2236:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2236 \
-    vendor/xiaomi/rosemary/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2236_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2236_ENUM \
+    vendor/xiaomi/rosemary/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2332:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2332 \
+    vendor/xiaomi/rosemary/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2332_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2332_ENUM \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/AudioParamOptions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
     vendor/xiaomi/rosemary/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
@@ -507,6 +507,27 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/firmware/gt9886_firmware_6885v01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_firmware_6885v01.bin \
     vendor/xiaomi/rosemary/proprietary/vendor/firmware/gt9886_firmware_6893v01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_firmware_6893v01.bin \
     vendor/xiaomi/rosemary/proprietary/vendor/firmware/gtx8_limits_K7.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gtx8_limits_K7.csv \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/lib3a.ccu:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_gc02m1bsunny_mipi_mono1:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_gc02m1bsunny_mipi_mono1 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_gc02m1bsunny_mipi_mono2:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_gc02m1bsunny_mipi_mono2 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_gc02m1ofilm_mipi_raw1:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_gc02m1ofilm_mipi_raw1 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_gc02m1ofilm_mipi_raw2:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_gc02m1ofilm_mipi_raw2 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_gc02m1sunny_mipi_raw1:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_gc02m1sunny_mipi_raw1 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_gc02m1sunny_mipi_raw2:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_gc02m1sunny_mipi_raw2 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_imx355ofilm_mipi_raw1:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_imx355ofilm_mipi_raw1 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_imx355ofilm_mipi_raw2:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_imx355ofilm_mipi_raw2 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_imx355sunny_mipi_raw1:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_imx355sunny_mipi_raw1 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_imx355sunny_mipi_raw2:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_imx355sunny_mipi_raw2 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_ov02b1bofilm_mipi_raw1:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_ov02b1bofilm_mipi_raw1 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_ov02b1bofilm_mipi_raw2:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_ov02b1bofilm_mipi_raw2 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_ov13b10ofilm_mipi_raw1:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_ov13b10ofilm_mipi_raw1 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_ov13b10ofilm_mipi_raw2:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_ov13b10ofilm_mipi_raw2 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_ov13b10sunny_mipi_raw1:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_ov13b10sunny_mipi_raw1 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_ov13b10sunny_mipi_raw2:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_ov13b10sunny_mipi_raw2 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_ov64b40ofilm_mipi_raw1:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_ov64b40ofilm_mipi_raw1 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_ov64b40ofilm_mipi_raw2:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_ov64b40ofilm_mipi_raw2 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_ov64b40semco_mipi_raw1:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_ov64b40semco_mipi_raw1 \
+    vendor/xiaomi/rosemary/proprietary/vendor/firmware/libccu_ov64b40semco_mipi_raw2:$(TARGET_COPY_OUT_VENDOR)/firmware/libccu_ov64b40semco_mipi_raw2 \
     vendor/xiaomi/rosemary/proprietary/vendor/firmware/mt6631_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_coeff.bin \
     vendor/xiaomi/rosemary/proprietary/vendor/firmware/mt6631_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_patch.bin \
     vendor/xiaomi/rosemary/proprietary/vendor/firmware/remoteproc_scp:$(TARGET_COPY_OUT_VENDOR)/firmware/remoteproc_scp \
@@ -705,7 +726,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
     vendor.mediatek.hardware.mms@1.6-impl \
     vendor.mediatek.hardware.mtkpower@1.2-impl \
-    vendor.mediatek.hardware.pq@2.13-impl \
+    vendor.mediatek.hardware.pq@2.15-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     imx355ofilm_mipi_raw_IdxMgr \
     imx355ofilm_mipi_raw_india_IdxMgr \
@@ -1189,6 +1210,7 @@ PRODUCT_PACKAGES += \
     libDR \
     libDefaultFpsActor \
     libFrameRecord \
+    libMiVideoFilter \
     libNoFpsActor \
     libOpenCL \
     libQstAlgo \
@@ -1212,7 +1234,6 @@ PRODUCT_PACKAGES += \
     libakm \
     libalCFR \
     libalLDC \
-    libalacdec_mtk \
     libalhLDC \
     libanc_dc_base \
     libanc_dc_plugin_xiaomi_v2 \
@@ -1538,6 +1559,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.11 \
     vendor.mediatek.hardware.pq@2.12 \
     vendor.mediatek.hardware.pq@2.13 \
+    vendor.mediatek.hardware.pq@2.14 \
+    vendor.mediatek.hardware.pq@2.15 \
     vendor.mediatek.hardware.pq@2.2 \
     vendor.mediatek.hardware.pq@2.3 \
     vendor.mediatek.hardware.pq@2.4 \
@@ -1621,16 +1644,6 @@ PRODUCT_PACKAGES += \
     lib3a.ccu.ddr \
     lib3a.ccu.dm \
     lib3a.ccu.pm \
-    libccu_gc02m1bsunny_mipi_mono.ddr \
-    libccu_gc02m1ofilm_mipi_raw.ddr \
-    libccu_gc02m1sunny_mipi_raw.ddr \
-    libccu_imx355ofilm_mipi_raw.ddr \
-    libccu_imx355sunny_mipi_raw.ddr \
-    libccu_ov02b1bofilm_mipi_raw.ddr \
-    libccu_ov13b10ofilm_mipi_raw.ddr \
-    libccu_ov13b10sunny_mipi_raw.ddr \
-    libccu_ov64b40ofilm_mipi_raw.ddr \
-    libccu_ov64b40semco_mipi_raw.ddr \
     meta_tst \
     mi_thermald \
     mnld \

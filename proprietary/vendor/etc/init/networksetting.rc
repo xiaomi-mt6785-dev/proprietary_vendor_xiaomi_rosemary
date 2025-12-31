@@ -2,6 +2,9 @@ on early-init
     # Change AOSP default tcp congestion control from cubic to bic.
     write /proc/sys/net/ipv4/tcp_congestion_control bic
 
+    # When a black hole is detected starts MTU probing
+    write /proc/sys/net/ipv4/tcp_mtu_probing 1
+
     # turn off hybrid slow start algorithm
     write /sys/module/tcp_cubic/parameters/hystart 0
 
