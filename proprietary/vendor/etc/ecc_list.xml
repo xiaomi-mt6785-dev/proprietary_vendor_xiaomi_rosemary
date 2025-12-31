@@ -289,6 +289,9 @@
     <!-- Support dial 999 under G+N/A case because CT network don't support
          dial 999 without no CT SIM
     -->
+    <EccEntry Ecc="000" Category="0" Condition="1" Plmn="460 FFF"/>
+    <EccEntry Ecc="08" Category="0" Condition="1" Plmn="460 FFF"/>
+    <EccEntry Ecc="118" Category="0" Condition="1" Plmn="460 FFF"/>
     <EccEntry Ecc="999" Category="0" Condition="2" Plmn="460 FFF"/>
     <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 FFF"/>
     
@@ -439,7 +442,6 @@
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="716 FFF"/>
     <EccEntry Ecc="105" Category="0" Condition="1" Plmn="716 06"/>
     <EccEntry Ecc="105" Category="0" Condition="1" Plmn="716 10"/>
-    <EccEntry Ecc="000" Category="0" Condition="0" Plmn="716 17"/>
 
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn="234 FFF"/>
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="234 FFF"/>

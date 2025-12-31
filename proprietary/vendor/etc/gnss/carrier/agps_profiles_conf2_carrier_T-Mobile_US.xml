@@ -22,10 +22,13 @@
   />
 
   <cp_setting
+    reject_non911_nilr_enable="true"
+    cp_lppe_civic_enable="false"
   />
 
   <up_setting
     ca_enable="true"
+    up_lppe_civic_enable="false"
   />
 
 </mtk_agps_profiles>

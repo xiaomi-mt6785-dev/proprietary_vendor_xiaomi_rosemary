@@ -809,6 +809,10 @@
         enable/disable SUPL raw data dump to main log (logcat)
         available value: true, false (default)
 
+    tc10_supl_1_0_disable:
+        disable suplv1 if suplv1 not selected by framework (tc10 requirement)
+        available value: true, false(default)
+
     allow_ni_for_gps_off:
         From Android 10, GVC (GNSS Visibility Control) is introduced.
         And GVC is mandatory to get the GMS License.
@@ -947,6 +951,9 @@
         enable/disable the MSB capability for galileo
         available value: true (default), false
 
+    customer_ca_path
+        now ca_enable=true by default, so customer may need install SUPL certification. Use this to
+        include customer's SUPL certification path.
   -->
   <up_setting
     ca_enable="true"
@@ -985,6 +992,7 @@
     tls_reuse_enable="false"
     imsi_cache_enable="false"
     supl_raw_data_enable="false"
+    tc10_supl_1_0_disable="false"
     allow_ni_for_gps_off="false"
     force_otdoa_assist_req="false"
     up_lppe_enable="true"
@@ -1009,6 +1017,7 @@
     beidou_msb_enable="true"
     galileo_msa_enable="true"
     galileo_msb_enable="true"
+    customer_ca_path="odm/etc/gnss/cacerts_supl/"
   />
 
   <!-- carrier_mapping
@@ -1060,7 +1069,7 @@
       v6="310230"
       v7="310240"
       v8="310250"
-      v9="31026"
+      v9="310260"
       v10="310270"
       v11="310300"
       v12="310310"

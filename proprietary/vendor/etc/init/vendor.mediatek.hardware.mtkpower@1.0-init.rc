@@ -55,6 +55,18 @@ on post-fs-data
     chmod 0664 /dev/cpuset/system-background/prefer_cpu
     chown system system /sys/module/cache_ctrl/parameters/enable
     chmod 0664 /sys/module/cache_ctrl/parameters/enable
+    chown system system /sys/devices/system/cpu/cpu4/core_ctl/offline_throttle_ms
+    chmod 0660 /sys/devices/system/cpu/cpu4/core_ctl/offline_throttle_ms
+    chown system system /sys/devices/system/cpu/cpu7/core_ctl/offline_throttle_ms
+    chmod 0660 /sys/devices/system/cpu/cpu7/core_ctl/offline_throttle_ms
+    chown system system /sys/devices/system/cpu/cpu0/core_ctl/btask_up_thresh
+    chmod 0660 /sys/devices/system/cpu/cpu0/core_ctl/btask_up_thresh
+    chown system system /sys/devices/system/cpu/cpu4/core_ctl/btask_up_thresh
+    chmod 0660 /sys/devices/system/cpu/cpu4/core_ctl/btask_up_thresh
+    chown system system /sys/devices/system/cpu/cpu7/core_ctl/cpu_tj_degree
+    chmod 0660 /sys/devices/system/cpu/cpu7/core_ctl/cpu_tj_degree
+    chown system system /sys/devices/system/cpu/cpu7/core_ctl/cpu_tj_btask_thresh
+    chmod 0660 /sys/devices/system/cpu/cpu7/core_ctl/cpu_tj_btask_thresh
     chown system system /sys/devices/system/cpu/cpufreq/schedutil/up_rate_limit_us
     chmod 0660 /sys/devices/system/cpu/cpufreq/schedutil/up_rate_limit_us
     chown system system /sys/devices/system/cpu/cpufreq/schedutil/down_rate_limit_us
@@ -62,6 +74,8 @@ on post-fs-data
     chown system system /dev/stune/foreground/schedtune.uclamp.min
     chmod 0660 /dev/stune/foreground/schedtune.uclamp.min
     chown system system /dev/stune/background/schedtune.uclamp.min
+    chmod 0660 /dev/stune/foreground/schedtune.uclamp.max
+    chown system system /dev/stune/foreground/schedtune.uclamp.max
     chmod 0660 /dev/stune/background/schedtune.uclamp.min
     chown system system /dev/stune/top-app/schedtune.uclamp.min
     chmod 0660 /dev/stune/top-app/schedtune.uclamp.min
@@ -101,6 +115,8 @@ on post-fs-data
     chmod 0660 /dev/cpuctl/system/cpu.uclamp.max
     chown system system /dev/cpuctl/system-background/cpu.uclamp.max
     chmod 0660 /dev/cpuctl/system-background/cpu.uclamp.max
+    chown system system /dev/cpuset/top-app/cpus
+    chmod 0660 /dev/cpuset/top-app/cpus
     chown system system /sys/devices/system/cpu/cpufreq/policy0/up_rate_limit_us
     chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/up_rate_limit_us
     chown system system /sys/devices/system/cpu/cpufreq/policy0/down_rate_limit_us
@@ -131,6 +147,12 @@ on post-fs-data
     chmod 0660 /sys/devices/system/cpu/cpufreq/policy7/sugov_ext/down_rate_limit_us
     chown system system /sys/module/mtk_core_ctl/parameters/policy_enable
     chmod 0660 /sys/module/mtk_core_ctl/parameters/policy_enable
+    chown system system /sys/devices/system/cpu/sched_ctl/sched_core_pause_info
+    chmod 0660 /sys/devices/system/cpu/sched_ctl/sched_core_pause_info
+    chown system system /sys/devices/system/cpu/cpufreq/sugov_ext/up_rate_limit_us
+    chmod 0660 /sys/devices/system/cpu/cpufreq/sugov_ext/up_rate_limit_us
+    chown system system /sys/devices/system/cpu/cpufreq/sugov_ext/down_rate_limit_us
+    chmod 0660 /sys/devices/system/cpu/cpufreq/sugov_ext/down_rate_limit_us
 
 # Task turbo
     chown system system /sys/module/task_turbo/parameters/feats
@@ -225,6 +247,16 @@ on post-fs-data
     chmod 0664 /proc/perfmgr/tchbst/user/usrtch
     chown system system /sys/module/mtk_fpsgo/parameters/cfp_onoff
     chmod 0664 /sys/module/mtk_fpsgo/parameters/cfp_onoff
+    chown system system /sys/module/mtk_fpsgo/parameters/cfp_polling_ms
+    chmod 0664 /sys/module/mtk_fpsgo/parameters/cfp_polling_ms
+    chown system system /sys/module/mtk_fpsgo/parameters/cfp_up_loading
+    chmod 0664 /sys/module/mtk_fpsgo/parameters/cfp_up_loading
+    chown system system /sys/module/mtk_fpsgo/parameters/cfp_down_loading
+    chmod 0664 /sys/module/mtk_fpsgo/parameters/cfp_down_loading
+    chown system system /sys/module/mtk_fpsgo/parameters/cfp_up_time
+    chmod 0664 /sys/module/mtk_fpsgo/parameters/cfp_up_time
+    chown system system /sys/module/mtk_fpsgo/parameters/cfp_down_time
+    chmod 0664 /sys/module/mtk_fpsgo/parameters/cfp_down_time
     chown system system /proc/perfmgr/boost_ctrl/cpu_ctrl/cfp_enable
     chmod 0664 /proc/perfmgr/boost_ctrl/cpu_ctrl/cfp_enable
     chown system system /proc/perfmgr/boost_ctrl/cpu_ctrl/cfp_polling_ms
@@ -267,6 +299,8 @@ on post-fs-data
     chmod 0664 /sys/kernel/ged/hal/dvfs_cwaitg
     chown system system /sys/kernel/ged/hal/dvfs_loading_mode
     chmod 0664 /sys/kernel/ged/hal/dvfs_loading_mode
+    chown system system /sys/kernel/ged/hal/dvfs_workload_mode
+    chmod 0664 /sys/kernel/ged/hal/dvfs_workload_mode
     chown system system /sys/class/misc/mali0/device/power_policy
     chmod 0664 /sys/class/misc/mali0/device/power_policy
     chown system system /sys/class/misc/mali0/device/pm_poweroff
@@ -277,6 +311,33 @@ on post-fs-data
     chmod 0664 /sys/kernel/ged/hal/custom_boost_gpu_freq
     chown system system /sys/kernel/ged/hal/custom_upbound_gpu_freq
     chmod 0664 /sys/kernel/ged/hal/custom_upbound_gpu_freq
+    chown system system /sys/kernel/ged/hal/dcs_mode
+    chmod 0664 /sys/kernel/ged/hal/dcs_mode
+    chown system system /sys/kernel/ged/hal/fw_idle
+    chmod 0664 /sys/kernel/ged/hal/fw_idle
+    chown system system /sys/kernel/ged/hal/gpu_boost_level
+    chmod 0664 /sys/kernel/ged/hal/gpu_boost_level
+    chown system system /sys/kernel/ged/hal/loading_window_size
+    chmod 0664 /sys/kernel/ged/hal/loading_window_size
+    chown system system /sys/kernel/ged/hal/loading_stride_size
+    chmod 0664 /sys/kernel/ged/hal/loading_stride_size
+    chown system system /sys/kernel/ged/hal/fallback_timing
+    chmod 0664 /sys/kernel/ged/hal/fallback_timing
+    chown system system /sys/kernel/ged/hal/fallback_interval
+    chmod 0664 /sys/kernel/ged/hal/fallback_interval
+    chown system system /proc/sys/vm/min_free_kbytes
+    chmod 0660 /proc/sys/vm/min_free_kbytes
+    chown system system /sys/kernel/mm/transparent_hugepage/enabled
+    chmod 0660 /sys/kernel/mm/transparent_hugepage/enabled
+    chown system system /sys/kernel/mm/transparent_hugepage/defrag
+    chmod 0660 /sys/kernel/mm/transparent_hugepage/defrag
+    chown system system /sys/kernel/mm/transparent_hugepage/khugepaged/defrag
+    chmod 0660 /sys/kernel/mm/transparent_hugepage/khugepaged/defrag
+    chown system system /sys/kernel/mm/transparent_hugepage/khugepaged/scan_sleep_millisecs
+    chmod 0660 /sys/kernel/mm/transparent_hugepage/khugepaged/scan_sleep_millisecs
+    chown system system /sys/module/ged/parameters/g_fb_dvfs_threshold
+    chmod 0664 /sys/module/ged/parameters/g_fb_dvfs_threshold
+
 
 # PPM
     chown system system /proc/ppm/policy_status
@@ -301,6 +362,8 @@ on post-fs-data
     chmod 0664 /sys/module/fbt_cpu/parameters/floor_bound
     chown system system /sys/module/fbt_cpu/parameters/kmin
     chmod 0664 /sys/module/fbt_cpu/parameters/kmin
+    chown system system /sys/module/fbt_cpu/parameters/variance
+    chmod 0660 /sys/module/fbt_cpu/parameters/variance
     chown system system /sys/module/mtk_fpsgo/parameters/bhr_opp
     chmod 0664 /sys/module/mtk_fpsgo/parameters/bhr_opp
     chown system system /sys/module/mtk_fpsgo/parameters/bhr
@@ -321,6 +384,8 @@ on post-fs-data
     chmod 0664 /sys/kernel/cm_mgr/dbg_cm_mgr
     chown system system /sys/kernel/fpsgo/minitop/enable
     chmod 0664 /sys/kernel/fpsgo/minitop/enable
+    chown system system /sys/kernel/fpsgo/minitop/thrs_heavy
+    chmod 0664 /sys/kernel/fpsgo/minitop/thrs_heavy
     chown system system /sys/kernel/fpsgo/fstb/fstb_fteh_list
     chmod 0664 /sys/kernel/fpsgo/fstb/fstb_fteh_list
     chown system system /sys/kernel/fpsgo/eara/ai_bench
@@ -347,8 +412,10 @@ on post-fs-data
     chmod 0664 /sys/kernel/fpsgo/fstb/jump_check_q_pct
     chown system system /sys/kernel/fpsgo/fstb/set_render_max_fps
     chown system system /sys/kernel/fpsgo/fstb/set_render_no_ctrl
+    chown system system /sys/kernel/fpsgo/fstb/set_ui_ctrl
     chmod 0660 /sys/kernel/fpsgo/fstb/set_render_max_fps
     chmod 0660 /sys/kernel/fpsgo/fstb/set_render_no_ctrl
+    chmod 0660 /sys/kernel/fpsgo/fstb/set_ui_ctrl
     chown system system /sys/kernel/eara_thermal/enable
     chmod 0660 /sys/kernel/eara_thermal/enable
     chown system system /sys/module/fbt_cpu/parameters/rescue_percent
@@ -381,6 +448,10 @@ on post-fs-data
     chmod 0664 /sys/module/mtk_fpsgo/parameters/rescue_second_group
     chown system system /sys/module/mtk_fpsgo/parameters/rescue_second_enhance_f
     chmod 0664 /sys/module/mtk_fpsgo/parameters/rescue_second_enhance_f
+    chown system system /sys/module/mtk_fpsgo/parameters/check_running
+    chmod 0664 /sys/module/mtk_fpsgo/parameters/check_running
+    chown system system /sys/module/mtk_fpsgo/parameters/rescue_second_g_enable
+    chmod 0664 /sys/module/mtk_fpsgo/parameters/rescue_second_g_enable
     chown system system /sys/kernel/fpsgo/fbt/ultra_rescue
     chmod 0664 /sys/kernel/fpsgo/fbt/ultra_rescue
     chown system system /sys/module/fbt_cpu/parameters/deqtime_bound
@@ -421,6 +492,8 @@ on post-fs-data
     chmod 0664 /sys/kernel/fpsgo/fbt/llf_task_policy
     chown system system /sys/kernel/fpsgo/fbt/light_loading_policy
     chmod 0664 /sys/kernel/fpsgo/fbt/light_loading_policy
+    chown system system /sys/module/mtk_fpsgo/parameters/loading_ignore_enable
+    chmod 0664 /sys/module/mtk_fpsgo/parameters/loading_ignore_enable
     chown system system /sys/kernel/fpsgo/fbt/thrm_temp_th
     chmod 0664 /sys/kernel/fpsgo/fbt/thrm_temp_th
     chown system system /sys/kernel/fpsgo/fbt/thrm_limit_cpu
@@ -475,6 +548,12 @@ on post-fs-data
     chmod 0664 /sys/kernel/gbe/gbe_policy_mask
     chown system system /sys/kernel/gbe/gbe2_timer1
     chmod 0664 /sys/kernel/gbe/gbe2_timer1
+    chown system system /sys/kernel/gbe/gbe_thrm_hdrm_thrs
+    chmod 0664 /sys/kernel/gbe/gbe_thrm_hdrm_thrs
+    chown system system /sys/kernel/gbe/gbe_cpu_1
+    chmod 0664 /sys/kernel/gbe/gbe_cpu_1
+    chown system system /sys/kernel/gbe/gbe_cpu_0
+    chmod 0664 /sys/kernel/gbe/gbe_cpu_0
     chown system system /sys/kernel/fpsgo/fbt/switch_idleprefer
     chmod 0664 /sys/kernel/fpsgo/fbt/switch_idleprefer
     chown system system /sys/module/xgf/parameters/xgf_sp_name_id
@@ -501,6 +580,10 @@ on post-fs-data
     chmod 0664 /sys/module/xgf/parameters/xgf_stddev_multi
     chown system system /sys/module/mtk_fpsgo/parameters/xgf_stddev_multi
     chmod 0664 /sys/module/mtk_fpsgo/parameters/xgf_stddev_multi
+    chown system system /sys/module/mtk_fpsgo/parameters/xgf_uboost
+    chmod 0664 /sys/module/mtk_fpsgo/parameters/xgf_uboost
+    chown system system /sys/module/mtk_fpsgo/parameters/uboost_enhance_f
+    chmod 0664 /sys/module/mtk_fpsgo/parameters/uboost_enhance_f
     chown system system /sys/module/fbt_cpu/parameters/qr_enable
     chmod 0660 /sys/module/fbt_cpu/parameters/qr_enable
     chown system system /sys/module/fbt_cpu/parameters/qr_hwui_hint
@@ -511,6 +594,10 @@ on post-fs-data
     chmod 0660 /sys/module/fbt_cpu/parameters/qr_t2wnt_y_p
     chown system system /sys/module/fbt_cpu/parameters/qr_t2wnt_y_n
     chmod 0660 /sys/module/fbt_cpu/parameters/qr_t2wnt_y_n
+    chown system system /sys/module/mtk_fpsgo/parameters/gcc_enable
+    chmod 0664 /sys/module/mtk_fpsgo/parameters/gcc_enable
+    chown system system /sys/module/fbt_cpu/parameters/gcc_enable
+    chmod 0664 /sys/module/fbt_cpu/parameters/gcc_enable
     chown system system /sys/module/fbt_cpu/parameters/gcc_enq_bound_thrs
     chmod 0660 /sys/module/fbt_cpu/parameters/gcc_enq_bound_thrs
     chown system system /sys/module/fbt_cpu/parameters/gcc_enq_bound_quota
@@ -593,12 +680,30 @@ on post-fs-data
     chmod 0660 /sys/kernel/fpsgo/fbt/thrm_enable
     chown system system /sys/kernel/fpsgo/fstb/adopt_low_fps
     chmod 0660 /sys/kernel/fpsgo/fstb/adopt_low_fps
+    chown system system /sys/kernel/fpsgo/fstb/set_cam_active
+    chmod 0660 /sys/kernel/fpsgo/fstb/set_cam_active
+    chown system system /sys/kernel/fpsgo/fstb/set_cam_active_fpsgo_off
+    chmod 0660 /sys/kernel/fpsgo/fstb/set_cam_active_fpsgo_off
     chown system system /sys/module/mtk_fpsgo/parameters/xgf_ema2_enable
     chmod 0660 /sys/module/mtk_fpsgo/parameters/xgf_ema2_enable
     chown system system /sys/kernel/fpsgo/fstb/fstb_self_ctrl_fps_enable
     chmod 0660 /sys/kernel/fpsgo/fstb/fstb_self_ctrl_fps_enable
     chown system system /sys/module/mtk_fpsgo/parameters/fstb_consider_deq
     chmod 0660 /sys/module/mtk_fpsgo/parameters/fstb_consider_deq
+    chown system system /sys/module/mtk_fpsgo/parameters/fstb_no_r_timer_enable
+    chmod 0660 /sys/module/mtk_fpsgo/parameters/fstb_no_r_timer_enable
+    chown system system /sys/kernel/fpsgo/fstb/tfps_to_powerhal_enable
+    chmod 0660 /sys/kernel/fpsgo/fstb/tfps_to_powerhal_enable
+    chown system system /sys/kernel/fpsgo/fstb/set_video_pid
+    chmod 0660 /sys/kernel/fpsgo/fstb/set_video_pid
+    chown system system /sys/kernel/fpsgo/fstb/clear_video_pid
+    chmod 0660 /sys/kernel/fpsgo/fstb/clear_video_pid
+    chown system system /sys/kernel/fpsgo/fstb/fstb_fps_bypass_min
+    chmod 0660 /sys/kernel/fpsgo/fstb/fstb_fps_bypass_min
+    chown system system /sys/module/mtk_fpsgo/parameters/loading_enable
+    chmod 0664 /sys/module/mtk_fpsgo/parameters/loading_enable
+    chown system system /sys/kernel/fpsgo/fbt/blc_boost
+    chmod 0660 /sys/kernel/fpsgo/fbt/blc_boost
 
 # NET
     chown system system /proc/net/wlan/setCAM
@@ -621,6 +726,8 @@ on post-fs-data
 # DISP
     chown system system /proc/displowpower/idletime
     chmod 0660 /proc/displowpower/idletime
+    chown system system /proc/displowpower/hrt_lp
+    chmod 0660 /proc/displowpower/hrt_lp
 
 # CPUIDLE
     chown system system /proc/cpuidle/enable
@@ -634,7 +741,32 @@ on post-fs-data
     chown system system /sys/kernel/apusys/mnoc_apu_qos_boost
     chmod 0664 /sys/kernel/apusys/mnoc_apu_qos_boost
 
+# CG policy
+    chown system system /sys/kernel/thermal/sports_mode
+    chmod 0664 /sys/kernel/thermal/sports_mode
 
+# G/D policy
+    chown system system /proc/mgq/job_status
+    chmod 0664 /proc/mgq/job_status
+
+# MAGT
+on property:ro.vendor.magt.mtk_magt_support=1
+    chown system system /proc/perfmgr_magt/magt_ioctl
+    chmod 0440 /proc/perfmgr_magt/magt_ioctl
+    chown system system /sys/kernel/fpsgo/xgf/runtime
+    chmod 0440 /sys/kernel/fpsgo/xgf/runtime
+    chown system system /sys/kernel/fpsgo/minitop/list
+    chmod 0440 /sys/kernel/fpsgo/minitop/list
+    chown system system /sys/kernel/fpsgo/common/render_loading
+    chmod 0440 /sys/kernel/fpsgo/common/render_loading
+    chown system system /sys/module/mtk_perf_ioctl_magt/parameters/thermal_aware_threshold
+    chmod 0660 /sys/module/mtk_perf_ioctl_magt/parameters/thermal_aware_threshold
+    chown system system /sys/module/mtk_perf_ioctl_magt/parameters/fpsdrop_aware_threshold
+    chmod 0660 /sys/module/mtk_perf_ioctl_magt/parameters/fpsdrop_aware_threshold
+    chown system system /sys/module/mtk_perf_ioctl_magt/parameters/advice_bat_avg_current
+    chmod 0660 /sys/module/mtk_perf_ioctl_magt/parameters/advice_bat_avg_current
+    chown system system /sys/module/mtk_perf_ioctl_magt/parameters/advice_bat_max_current
+    chmod 0660 /sys/module/mtk_perf_ioctl_magt/parameters/advice_bat_max_current
 
 #memory performance
 on property:sys.sysctl.extra_free_kbytes=*

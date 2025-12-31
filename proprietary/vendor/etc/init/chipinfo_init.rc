@@ -1,5 +1,5 @@
 on early-init
-    exec_background -- /vendor/bin/chipinfo
+    exec_background - system system -- /vendor/bin/chipinfo
 
 on post-fs-data
     wait_for_prop ro.vendor.soc.model_ready 1
