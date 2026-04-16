@@ -615,7 +615,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
     audio.primary.mt6785 \
-    audio.r_submix.mt6785 \
     sound_trigger.primary.default \
     libHEVCdec_sa.ca7.android \
     libMtkSpeechEnh \
