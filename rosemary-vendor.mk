@@ -1670,3 +1670,13 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libneuron_runtime_so \
     vendor_lib64_libnir_neon_driver_so \
     vendor_lib64_libpq_prot_so
+
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-ims-extension-plugin \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
