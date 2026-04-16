@@ -1577,6 +1577,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
     ImsService \
+    MtkGbaService \
     HotwordEnrollmentOKGoogleCORTEXM4 \
     HotwordEnrollmentXGoogleCORTEXM4 \
     mediatek-ims-base \
