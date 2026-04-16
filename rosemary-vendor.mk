@@ -1587,7 +1587,7 @@ PRODUCT_PACKAGES += \
     lbs_hidl_service@1.0.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_hwcomposer.xml \
-    manifest_media_c2_V1_1_default.xml \
+    manifest_media_c2_V1_2_default.xml \
     SoterProvisioningTool \
     batterysecret \
     bip \
