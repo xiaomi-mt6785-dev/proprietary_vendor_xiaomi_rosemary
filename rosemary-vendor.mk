@@ -559,7 +559,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosemary/proprietary/vendor/xbin/dc_cal:$(TARGET_COPY_OUT_VENDOR)/xbin/dc_cal
 
 PRODUCT_PACKAGES += \
-    consumerir.mt6785 \
     vendor.mediatek.hardware.nvram@1.1-impl \
     libJpgEncPipe \
     libaedv \
@@ -693,6 +692,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-mediatek \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
+    consumerir.mt6785 \
     fingerprint.fpc.default \
     fingerprint.goodix.default \
     gatekeeper.beanpod \
@@ -1601,7 +1601,6 @@ PRODUCT_PACKAGES += \
     ccci_mdinit \
     ccci_rpcd \
     charon \
-    consumerird \
     fuelgauged \
     fuelgauged_nvram \
     gsm0710muxd \
