@@ -1579,8 +1579,6 @@ PRODUCT_PACKAGES += \
     MtkGbaService \
     MtkTelephonyAssist \
     mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
     mediatek-telephony-base \
     com.android.hotwordenrollment.common.util \
     mediatek-ims-extension-plugin \
@@ -1665,6 +1663,4 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
     mediatek-telephony-base
